@@ -1,0 +1,225 @@
+*{
+    color: white;
+    font-family:'Roboto', Arial, sans-serif;
+    font-weight: 300;
+}
+html,
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+.wrapper{
+    min-height: 100vh;
+}
+
+
+
+.wellcome{
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url("Images/wellcome_photo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 2%;
+    text-align: center;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+.wellcome a{
+    color: white;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+}
+.wellcome a:hover{
+    text-decoration: none;
+    color: rgb(232, 196, 135);
+}
+.company__name{
+    padding-top: 14%;
+    max-width: 1000px;
+    margin: auto;
+}
+.company__description{
+    font-size: 17px;
+    padding-top: 4%;
+    max-width: 800px;
+    margin: auto;
+}
+.company__models{
+    padding-top: 2%;
+}
+.company__models .btn{
+    font-size: 15px;
+    color: black;
+    padding: 13px 25px;
+    border-radius: 0;
+    background-color: white;
+    border: 1px solid white;
+    -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+}
+.company__models .btn:hover{
+    color: black;
+    background-color: rgb(232, 196, 135);
+    border: 1px solid rgb(232, 196, 135);
+    -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+}
+
+
+
+.description{
+    @media (max-width:720px) {
+
+     }
+    @media (min-width:721px) {
+        
+    }
+    @media (min-width:940px) {
+        min-height: 100vh;
+    }
+    
+    background-size: 100% 100%;
+    padding: 2%;
+    text-align: center;
+    position: relative;
+}
+.description .desc__img{
+    @media (max-width:720px) {
+       display: none;
+    }
+    @media (min-width:721px) {
+        display: none;
+    }
+    @media (min-width:940px) {
+        display: block;
+    }
+}
+.description img{
+    border-right: 1px solid rgb(232, 196, 135);
+    border-bottom: 1px solid rgb(232, 196, 135);
+    width: 500px;
+    height: 550px;
+    object-fit: cover;
+    position: absolute;
+    top: 18%;
+    left: 20%;
+}
+.desc__text{
+    @media (max-width:720px) {
+        background-color: white;
+        border: 1px solid rgb(232, 196, 135);
+        max-width: 900px;
+        color: black;
+        text-align: left;
+        padding: 4%;
+        margin: 5%;
+     }
+    @media (min-width:721px) {
+        background-color: white;
+        border: 1px solid rgb(232, 196, 135);
+        max-width: 900px;
+        color: black;
+        text-align: left;
+        padding: 4%;
+        margin: 5%;
+    }
+    @media (min-width:940px) {
+        position: absolute;
+        background-color: white;
+        border-left: 1px solid rgb(232, 196, 135);
+        border-top: 1px solid rgb(232, 196, 135);
+        max-width: 800px;
+        color: black;
+        text-align: left;
+        padding: 4%;
+        top: 28%;
+        right: 10%;
+        left: 35%;
+    }
+}
+.desc__text p, .desc__text h2{
+    color: black;
+}
+.desc__text p{
+    font-size: 18px;
+}
+.desc__text hr{
+    max-width: 50px;
+    color: rgb(232, 196, 135);
+    opacity: 1;
+}
+.desc__text .btn{
+    background-color: white;
+    border: 1px solid rgb(232, 196, 135);
+    padding: 3% 8%;
+    margin-top: 4%;
+}
+.desc__text .btn:hover{
+    background-color: rgb(232, 196, 135);
+}
+
+
+
+.models{
+    @media (max-width:720px) {
+        text-align: center;
+        flex: 1 1 auto;
+        flex-direction: column;
+    }
+    @media (min-width:721px) {
+        text-align: center;
+        flex: 1 1 auto;
+        flex-direction: column;
+    }
+    @media (min-width:940px) {
+        text-align: center;
+        flex: 1 1 auto;
+        flex-direction: column;
+    }
+    
+}
+.model_card{
+    max-width: 400px;
+    margin: 2% 1%;
+    padding: 0;
+    display: inline-block;
+}
+.models__description p,.models__description h2{
+    color: white;
+}
+.models__description hr{
+    max-width: 100px;
+    color: rgb(232, 196, 135);
+    opacity: 1;
+}
+.models__cards img{
+    object-fit: cover;
+    width:400px;
+    height: 500px;
+}
+.models .btn{
+    display: inline-block;
+}
+.models .btn-photo{
+    background-color: white;
+    border-radius: 0;
+    border: 1px solid rgb(232, 196, 135);
+}
+.models .btn-invite{
+    background-color: black;
+    border-radius: 0;
+    border: 1px solid rgb(232, 196, 135);
+    color: white;
+}
+.models .btn:hover{
+    background-color: rgb(232, 196, 135);
+}
+.models .btns{
+    text-align: left;
+    width:100%;
+}
