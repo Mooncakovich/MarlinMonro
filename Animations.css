@@ -1,13 +1,13 @@
 @keyframes showLeft {
 
-from {left:-10%; opacity: 0;}
+from {left:-50%; opacity: 0;}
 
 to {left:0; opacity: 1;}
 
 }
 @keyframes showRight {
 
-from {right:-10%; opacity: 0;}
+from {right:-50%; opacity: 0;}
 
 to {right:0; opacity: 1;}
 
