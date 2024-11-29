@@ -15,19 +15,40 @@ body{
 }
 
 
-
 .wellcome{
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url("Images/wellcome_photo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    padding: 2%;
     text-align: center;
     flex: 1 1 auto;
     flex-direction: column;
 }
+.wellcome__bg {
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    min-height: 100vh;
+    padding-top:45%;
+}
+.wellcome__bg__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  height: 100vh;
+  overflow: hidden;
+}
+.wellcome__overlay {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1));
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    padding: 2%;
+}
+
+
 .wellcome a{
     color: white;
     text-decoration: none;
@@ -74,10 +95,10 @@ body{
 
 .description{
     @media (max-width:720px) {
-
+        min-height: 100vh;
      }
     @media (min-width:721px) {
-        
+        min-height: 100vh;
     }
     @media (min-width:940px) {
         min-height: 100vh;
@@ -137,7 +158,7 @@ body{
         color: black;
         text-align: left;
         padding: 4%;
-        top: 28%;
+        top: 18%;
         right: 10%;
         left: 35%;
     }
@@ -155,9 +176,11 @@ body{
 }
 .desc__text .btn{
     background-color: white;
+    color: black;
     border: 1px solid rgb(232, 196, 135);
     padding: 3% 8%;
     margin-top: 4%;
+    border-radius: 0;
 }
 .desc__text .btn:hover{
     background-color: rgb(232, 196, 135);
@@ -177,6 +200,8 @@ body{
         flex-direction: column;
     }
     @media (min-width:940px) {
+        max-width: 1300px;
+        margin: auto;;
         text-align: center;
         flex: 1 1 auto;
         flex-direction: column;
@@ -184,7 +209,7 @@ body{
     
 }
 .model_card{
-    max-width: 400px;
+    max-width: 380px;
     margin: 2% 1%;
     padding: 0;
     display: inline-block;
@@ -199,14 +224,16 @@ body{
 }
 .models__cards img{
     object-fit: cover;
-    width:400px;
-    height: 500px;
+    width:380px;
+    height: 470px;
+    border-radius: 25px;
 }
-.models .btn{
-    display: inline-block;
+.models .btns .btn{
+    width: 45%;
 }
 .models .btn-photo{
     background-color: white;
+    color: black;
     border-radius: 0;
     border: 1px solid rgb(232, 196, 135);
 }
@@ -222,4 +249,103 @@ body{
 .models .btns{
     text-align: left;
     width:100%;
+    justify-content: space-around;
+    display: flex;
+}
+.model__card__popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    visibility: hidden;
+    overscroll-behavior:contain;
+    overflow-y: auto;
+    transition: all 0.8s ease 0s;
+    z-index: 100;
+}
+.model__card__popup:target{
+    opacity: 1;
+    visibility: visible;
+}
+.popup__body{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto    ;
+}
+.popup__content{
+    color: white;
+    max-width: 1500px;
+}
+.popup__text{
+    max-width: 500px;
+    padding: 2% 5%;
+    margin: 0 auto;
+    text-align: left;
+    vertical-align: top;
+}
+.popup__text{
+    transition: all 0.8s ease 0s;
+    transform: translate(100%, 0px);
+}
+.carousel{
+    transition: all 0.8s ease 0s;
+    transform: translate(-100%, 0px);
+}
+.model__card__popup:target .popup__content .popup__text, 
+.model__card__popup:target .popup__content .carousel{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.popup__text .name{
+    font-size: 24px;
+}
+.popup__text .esc{
+    font-size: 14px;
+    color: gray;
+}
+.popup__text .order{
+    background-color: white;
+    padding: 3% 7%;
+    border-radius: 0;
+    color: black;
+
+}
+.popup__text  .number{
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgb(232, 196, 135);
+}
+.popup__text .info{
+    font-size: 14px;
+}
+.popup__text .desc__model{
+    font-size: 15px;
+}
+.popup__close{
+    color: white;
+    font-weight: bolder;
+    font-size: 20;
+    text-decoration: none;
+    padding-bottom: 10%;
+}
+.popup__close:hover{
+    text-decoration: none;
+    color: rgb(232, 196, 135);
+}
+.carousel img{
+    object-fit: cover;
+    max-width:500px;
+    max-height: 700px;
+    border-radius: 25px;
+    margin-top: 5%;
+}
+.carousel, .popup__text{
+    display: inline-block;
 }

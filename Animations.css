@@ -1,0 +1,51 @@
+@keyframes showLeft {
+
+from {left:-10%; opacity: 0;}
+
+to {left:0; opacity: 1;}
+
+}
+@keyframes showRight {
+
+from {right:-10%; opacity: 0;}
+
+to {right:0; opacity: 1;}
+
+}
+@keyframes showBottom {
+
+from {bottom:-100%; opacity: 0;}
+
+to {bottom:0; opacity: 1;}
+
+}
+.bottom{
+    opacity: 0;
+    -ms-transform: translateY(60px);
+    transform: translateY(60px);
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.left{
+    opacity: 0;
+}
+.right{
+    opacity: 0;
+}
+.bottom.act {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+}
+.left.act {
+    position: relative;
+    animation: showLeft 1s;
+    opacity: 1;
+}
+.right.act {
+    position: relative;
+    animation: showRight 1s;
+    opacity: 1;
+}
