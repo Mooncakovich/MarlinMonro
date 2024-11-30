@@ -27,6 +27,7 @@ a:hover{
     flex: 1 1 auto;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
 }
 .wellcome__bg {
     overflow: hidden;
@@ -64,7 +65,7 @@ a:hover{
     color: rgb(232, 196, 135);
 }
 .company__name{
-    padding-top: 14%;
+    padding-top: 14vh;
     max-width: 1000px;
     margin: auto;
 }
@@ -236,6 +237,7 @@ a:hover{
         flex-direction: column;
     }
     position: relative;
+    overflow: hidden;
 }
 .model_card{
     max-width: 380px;
@@ -439,4 +441,4 @@ a:hover{
 }
 .hidden {
     z-index: -10;
-  }
+}
