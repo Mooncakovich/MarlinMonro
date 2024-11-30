@@ -235,7 +235,7 @@ a:hover{
         flex: 1 1 auto;
         flex-direction: column;
     }
-    
+    position: relative;
 }
 .model_card{
     max-width: 380px;
@@ -405,3 +405,38 @@ a:hover{
 .social a:hover {
     text-decoration: none;
 }
+#hidden__block{
+    width: 48px;
+    height: 48px;
+    font-size: 28px;
+    transform: rotate(-90deg);
+    padding: 0;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+}
+#hidden__block:hover{
+    color: rgb(232, 196, 135);
+}
+.go__back__button{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid rgb(232, 196, 135);
+    position: absolute;
+    top: 120vh;
+    right: 2%;
+}
+.fixed {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid rgb(232, 196, 135);
+    z-index: 10;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+}
+.hidden {
+    z-index: -10;
+  }
