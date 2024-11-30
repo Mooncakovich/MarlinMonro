@@ -9,18 +9,24 @@ body{
     padding: 0;
     height: 100%;
     background-color: black;
+    scroll-behavior: smooth;
 }
 .wrapper{
     min-height: 100vh;
 }
-
-
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
 .wellcome{
     min-height: 100vh;
     width: 100%;
     text-align: center;
     flex: 1 1 auto;
     flex-direction: column;
+    position: relative;
 }
 .wellcome__bg {
     overflow: hidden;
@@ -47,8 +53,6 @@ body{
     z-index: 2;
     padding: 2%;
 }
-
-
 .wellcome a{
     color: white;
     text-decoration: none;
@@ -90,7 +94,32 @@ body{
     -webkit-transition: all 1s ease;
         transition: all 1s ease;
 }
-
+.wellcome__next__wrapper{
+    position: absolute;
+    bottom: 1%;
+    width: 10%;
+    left: 45%;
+    text-align: center;
+    font-size: 50px;
+    transform: rotate(90deg);
+}
+.wellcome__next{
+    animation: spin 1.4s infinite linear;
+}
+.wellcome__next:hover{
+    color: rgb(232, 196, 135);
+}
+@keyframes spin {
+    0% {
+      transform: translate3d(-25%, 0, 0);
+    }
+    50% {
+      transform: translate3d(0%, 0, 0);
+    }
+    100% {
+      transform: translate3d(-25%, 0, 0);
+    }
+  }
 
 
 .description{
@@ -348,4 +377,31 @@ body{
 }
 .carousel, .popup__text{
     display: inline-block;
+}
+
+.navigation{
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    right: 2%;
+    top: 2%;
+}
+.navigation img{
+    width: 46px;
+    height: 46px;
+    position: relative;
+    border: 1px solid rgb(232, 196, 135);border-radius: 15px;
+}
+.social a {
+    text-align: center;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    
+    margin: 0 10px 10px 0;
+    color: #000;
+    display: inline-block;
+}
+.social a:hover {
+    text-decoration: none;
 }
