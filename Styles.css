@@ -242,10 +242,24 @@ a:hover{
 .model_card{
     max-width: 380px;
     margin: 2% 1%;
-    padding: 0;
+    padding: 0px 0px;
     display: inline-block;
+    text-align: left;
 }
-.models__description p,.models__description h2{
+.model_card .name{
+    font-size: 30px;
+    display:inline-block;
+}
+.model_card .price{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgb(232, 196, 135);
+    display:inline-block;
+    float: right;
+    margin-right: 12%;
+}
+.models__description p,.models__description h2,.models__description h3{
     color: white;
 }
 .models__description hr{
@@ -259,29 +273,36 @@ a:hover{
     height: 470px;
     border-radius: 25px;
 }
-.models .btns .btn{
-    width: 45%;
+.model__card__description{
+    display: block;
+    margin-top: 1%;
 }
 .models .btn-photo{
     background-color: white;
     color: black;
     border-radius: 0;
     border: 1px solid rgb(232, 196, 135);
+    width: 30%;
+    border-radius: 5px;
+    display: inline-block;
+    
 }
 .models .btn-invite{
     background-color: black;
     border-radius: 0;
     border: 1px solid rgb(232, 196, 135);
     color: white;
+    width: 40%;
+    border-radius: 5px;
+    display: inline-block;
+    float: right;
+   
 }
 .models .btn:hover{
     background-color: rgb(232, 196, 135);
 }
 .models .btns{
-    text-align: left;
-    width:100%;
-    justify-content: space-around;
-    display: flex;
+    text-align: justify;
 }
 .model__card__popup{
     position: fixed;
