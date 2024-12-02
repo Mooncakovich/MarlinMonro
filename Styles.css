@@ -514,13 +514,16 @@ a:hover {
     border: 1px solid rgb(232, 196, 135);
     border-radius: 15px;
 }
-
+.gold{
+    fill: white; 
+}
+.gold:hover{
+    fill: rgb(232, 196, 135); 
+}
 .social a {
     text-align: center;
     width: 48px;
     height: 48px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), inset 0 0 50px rgba(0, 0, 0, 0.1);
-
     margin: 0 10px 10px 0;
     color: #000;
     display: inline-block;

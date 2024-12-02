@@ -1,27 +1,30 @@
 @keyframes showLeft {
 
-from{
-    translate: -15vw;
-    opacity: 0;
+    from {
+        translate: -15vw;
+        opacity: 0;
+    }
 }
-}
+
 @keyframes showRight {
 
-    from{
+    from {
         translate: 15vw;
         opacity: 0;
     }
 
 }
+
 @keyframes showBottom {
 
-    from{
+    from {
         translate: -15vh;
         opacity: 0;
     }
 
 }
-.bottom{
+
+.bottom {
     opacity: 0;
     -ms-transform: translateY(60px);
     transform: translateY(60px);
@@ -29,23 +32,28 @@ from{
     -o-transition: all 1s;
     transition: all 1s;
 }
-.left{
+
+.left {
     opacity: 0;
 }
-.right{
+
+.right {
     opacity: 0;
 }
+
 .bottom.act {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
 }
+
 .left.act {
     position: relative;
     animation: showLeft 1s;
     opacity: 1;
 }
+
 .right.act {
     position: relative;
     animation: showRight 1s;
