@@ -1,14 +1,14 @@
 @keyframes showLeft {
 
 from{
-    translate: -25vw;
+    translate: -15vw;
     opacity: 0;
 }
 }
 @keyframes showRight {
 
     from{
-        translate: 25vw;
+        translate: 15vw;
         opacity: 0;
     }
 
@@ -16,7 +16,7 @@ from{
 @keyframes showBottom {
 
     from{
-        translate: -25vh;
+        translate: -15vh;
         opacity: 0;
     }
 
