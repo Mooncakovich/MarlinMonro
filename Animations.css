@@ -1,22 +1,24 @@
 @keyframes showLeft {
 
-from {left:-10%; opacity: 0;}
-
-to {left:0; opacity: 1;}
-
+from{
+    translate: -25vw;
+    opacity: 0;
+}
 }
 @keyframes showRight {
 
-from {right:-10%; opacity: 0;}
-
-to {right:0; opacity: 1;}
+    from{
+        translate: 25vw;
+        opacity: 0;
+    }
 
 }
 @keyframes showBottom {
 
-from {bottom:-100%; opacity: 0;}
-
-to {bottom:0; opacity: 1;}
+    from{
+        translate: -25vh;
+        opacity: 0;
+    }
 
 }
 .bottom{
