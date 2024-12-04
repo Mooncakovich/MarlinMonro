@@ -1,7 +1,8 @@
 * {
   color: white;
-  font-family: "Roboto", Arial, sans-serif;
-  font-weight: 300;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 html,
@@ -537,6 +538,18 @@ a:hover {
 .gold:hover {
   fill: rgb(232, 196, 135);
 }
+.blue {
+  fill: rgb(61, 94, 151);
+}
+.blue:hover {
+  fill: rgb(232, 196, 135);
+}
+.green {
+  fill: green;
+}
+.green:hover {
+  fill: rgb(232, 196, 135);
+}
 .social a {
   text-align: center;
   width: 48px;
@@ -549,7 +562,21 @@ a:hover {
 .social a:hover {
   text-decoration: none;
 }
+.social__in a {
+  text-align: center;
+  width: 48px;
+  height: 48px;
+  margin: 0 10px 10px 0;
+  color: #000;
+  display: inline-block;
+}
 
+.sociall__i a:hover {
+  text-decoration: none;
+}
+.social__in {
+  display: inline-block;
+}
 #hidden__block {
   width: 48px;
   height: 48px;
