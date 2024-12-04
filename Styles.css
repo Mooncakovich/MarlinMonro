@@ -394,12 +394,29 @@ a:hover {
   transition: all 0.8s ease 0s;
   z-index: 100;
 }
-
+.model__card__popup__eng {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  visibility: hidden;
+  overscroll-behavior: contain;
+  overflow-y: auto;
+  transition: all 0.8s ease 0s;
+  z-index: 100;
+}
 .model__card__popup:target {
   opacity: 1;
   visibility: visible;
 }
-
+.model__card__popup__eng:target {
+  opacity: 1;
+  visibility: visible;
+}
 .popup__body {
   min-height: 100%;
   display: flex;
@@ -436,7 +453,11 @@ a:hover {
   transform: translate(0px, 0px);
   opacity: 1;
 }
-
+.model__card__popup__eng:target .popup__content .popup__text,
+.model__card__popup__eng:target .popup__content .carousel {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
 .popup__text .name {
   font-size: 24px;
 }
@@ -585,26 +606,53 @@ a:hover {
   transition: all 0.8s ease 0s;
   z-index: 100;
 }
-
+.contacts__popup__eng {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  visibility: hidden;
+  overscroll-behavior: contain;
+  overflow-y: auto;
+  transition: all 0.8s ease 0s;
+  z-index: 100;
+}
 .contacts__popup:target {
   opacity: 1;
   visibility: visible;
 }
-
+.contacts__popup__eng:target {
+  opacity: 1;
+  visibility: visible;
+}
 .contacts__popup__body {
   min-height: 100%;
   align-items: center;
   justify-content: center;
   margin: auto;
 }
-
+.contacts__popup__eng__body {
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
 .contacts__popup__content {
   color: white;
   width: 100%;
   margin: auto;
   padding-top: 10%;
 }
-
+.contacts__popup__eng__content {
+  color: white;
+  width: 100%;
+  margin: auto;
+  padding-top: 10%;
+}
 .contact__window {
   display: inline-block;
   border: 1px solid rgb(232, 196, 135);
@@ -614,7 +662,7 @@ a:hover {
   max-width: 600px;
   margin: 2% 1%;
   padding: 1%;
-  height: 50vh;
+  height: 30vh;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -629,11 +677,66 @@ a:hover {
   transform: translate(0px, 0px);
   opacity: 1;
 }
+.contacts__popup__eng:target
+  .contacts__popup__eng__content
+  .contacts__popup__eng__text,
+.contacts__popup__eng:target .contacts__popup__eng__content {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
 
 .contacts__popup__text .desc__model {
   font-size: 15px;
 }
-
+.contacts__popup__eng__text .desc__model {
+  font-size: 15px;
+}
+.contacts__popup__link {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgb(232, 196, 135);
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
+  font-size: 20;
+  text-decoration: none;
+  padding-bottom: 10%;
+  padding: 5%;
+  margin: 5% auto;
+}
+.contacts__popup__eng__link {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgb(232, 196, 135);
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
+  font-size: 20;
+  text-decoration: none;
+  padding-bottom: 10%;
+  padding: 5%;
+  margin: 5% auto;
+}
+.contacts__popup__linka {
+  text-decoration: none;
+}
+.contacts__popup__eng__linka {
+  text-decoration: none;
+}
+.contacts__popup__linka:hover {
+  text-decoration: none;
+  color: rgb(232, 196, 135);
+}
+.contacts__popup__eng__linka:hover {
+  text-decoration: none;
+  color: rgb(232, 196, 135);
+}
+.contacts__popup__link:hover {
+  text-decoration: none;
+  color: rgb(232, 196, 135);
+}
+.contacts__popup__eng__link:hover {
+  text-decoration: none;
+  color: rgb(232, 196, 135);
+}
 .contacts__popup__close {
   background-color: rgba(0, 0, 0, 0.9);
   border: 1px solid rgb(232, 196, 135);
@@ -646,12 +749,26 @@ a:hover {
   display: inline-block;
   padding: 1%;
 }
-
+.contacts__popup__eng__close {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgb(232, 196, 135);
+  border-radius: 10px;
+  color: white;
+  font-weight: bolder;
+  font-size: 20;
+  text-decoration: none;
+  padding-bottom: 10%;
+  display: inline-block;
+  padding: 1%;
+}
 .contacts__popup__close:hover {
   text-decoration: none;
   color: rgb(232, 196, 135);
 }
-
+.contacts__popup__eng__close:hover {
+  text-decoration: none;
+  color: rgb(232, 196, 135);
+}
 .footer {
   width: 100%;
   margin-top: 2%;
