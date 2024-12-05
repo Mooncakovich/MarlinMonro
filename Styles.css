@@ -4,7 +4,13 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  letter-spacing: 2px;
+  @media (max-width: 720px) {
+    letter-spacing: 1px;
+  }
+
+  @media (min-width: 721px) {
+    letter-spacing: 2px;
+  }
 }
 .wellcome__next,
 .go__back__button {
@@ -89,7 +95,7 @@ a:hover {
 }
 
 .company__description {
-  font-size: 20px;
+  font-size: 18px;
   padding-top: 4%;
   max-width: 800px;
   margin: auto;
