@@ -1,7 +1,12 @@
 * {
   color: white;
-  font-family: "Great Vibes", cursive;
-  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+}
+.wellcome__next,
+.go__back__button {
   font-style: normal;
 }
 
