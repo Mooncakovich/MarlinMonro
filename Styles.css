@@ -120,8 +120,18 @@ a:hover {
   text-align: center;
   font-size: 50px;
   transform: rotate(90deg);
+  margin-top: 5%;
 }
-
+.desc__next__wrapper {
+  position: absolute;
+  bottom: -3%;
+  width: 10%;
+  left: 45%;
+  text-align: center;
+  font-size: 50px;
+  transform: rotate(90deg);
+  margin-top: 5%;
+}
 .wellcome__next {
   animation: spin 1.4s infinite linear;
 }
