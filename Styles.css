@@ -379,7 +379,26 @@ a:hover {
 .models .btns a {
   text-decoration: none;
 }
-
+.models .btn3 {
+  background-color: black;
+  color: white;
+  border-radius: 0;
+  border: 1px solid rgb(232, 196, 135);
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 2%;
+  padding: 3%;
+}
+.models .btn3:hover {
+  background-color: rgb(232, 196, 135);
+  color: white;
+  border-radius: 0;
+  border: 1px solid rgb(232, 196, 135);
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0 2%;
+  padding: 3%;
+}
 .model__card__popup {
   position: fixed;
   width: 100%;
