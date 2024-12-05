@@ -3,7 +3,8 @@
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  font-style: italic;
+  font-style: normal;
+  letter-spacing: 2px;
 }
 .wellcome__next,
 .go__back__button {
@@ -88,7 +89,7 @@ a:hover {
 }
 
 .company__description {
-  font-size: 17px;
+  font-size: 20px;
   padding-top: 4%;
   max-width: 800px;
   margin: auto;
@@ -126,6 +127,9 @@ a:hover {
   font-size: 50px;
   transform: rotate(90deg);
   margin-top: 5%;
+}
+.company__name h1 {
+  font-size: 50px;
 }
 .desc__next__wrapper {
   position: absolute;
