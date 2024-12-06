@@ -25,7 +25,6 @@ body {
   background-color: black;
   scroll-behavior: smooth;
 }
-
 .wrapper__rus {
   min-height: 100vh;
 }
@@ -184,9 +183,11 @@ a:hover {
 
   background-size: 100% 100%;
   padding: 2%;
+  margin-bottom: 5%;
   margin: auto;
   max-width: 1300px;
   position: relative;
+  overflow: hidden;
 }
 
 .description__title {
@@ -358,12 +359,16 @@ a:hover {
   opacity: 1;
   border-top: 1px solid rgb(232, 196, 135);
 }
-
+.models__cards {
+  z-index: 5;
+  position: relative;
+}
 .models__cards img {
   object-fit: cover;
   width: 380px;
   height: 470px;
   border-radius: 25px;
+  z-index: 4;
 }
 
 .model__card__description {
@@ -437,7 +442,7 @@ a:hover {
   overscroll-behavior: contain;
   overflow-y: auto;
   transition: all 0.8s ease 0s;
-  z-index: 100;
+  z-index: 101;
 }
 .model__card__popup__eng {
   position: fixed;
@@ -452,7 +457,7 @@ a:hover {
   overscroll-behavior: contain;
   overflow-y: auto;
   transition: all 0.8s ease 0s;
-  z-index: 100;
+  z-index: 101;
 }
 .model__card__popup:target {
   opacity: 1;
@@ -468,11 +473,15 @@ a:hover {
   align-items: center;
   justify-content: center;
   margin: auto;
+  z-index: 101;
+  position: relative;
 }
 
 .popup__content {
   color: white;
   max-width: 1500px;
+  z-index: 101;
+  position: relative;
 }
 
 .popup__text {
@@ -481,6 +490,8 @@ a:hover {
   margin: 0 auto;
   text-align: left;
   vertical-align: top;
+  position: relative;
+  z-index: 101;
 }
 
 .popup__text {
@@ -628,7 +639,6 @@ a:hover {
   transform: rotate(-90deg);
   padding: 0;
   text-align: center;
-  flex-direction: column;
   display: block;
 }
 
@@ -642,8 +652,13 @@ a:hover {
   animation-timeline: scroll();
   animation-range: 500px 501px;
   visibility: hidden;
+  z-index: 100;
+  position: fixed;
 }
-
+.go__back__button__wrapper a {
+  z-index: 100;
+  position: fixed;
+}
 .go__back__button {
   width: 50px;
   height: 50px;
@@ -652,12 +667,13 @@ a:hover {
   position: fixed;
   bottom: 2%;
   right: 2%;
+  z-index: 100;
 }
 
 @keyframes go__back__button {
   to {
     opacity: 1;
-    z-index: 1000;
+    z-index: 100;
     visibility: visible;
   }
 }
@@ -675,7 +691,7 @@ a:hover {
   overscroll-behavior: contain;
   overflow-y: auto;
   transition: all 0.8s ease 0s;
-  z-index: 100;
+  z-index: 101;
 }
 .contacts__popup__eng {
   position: fixed;
@@ -690,7 +706,7 @@ a:hover {
   overscroll-behavior: contain;
   overflow-y: auto;
   transition: all 0.8s ease 0s;
-  z-index: 100;
+  z-index: 101;
 }
 .contacts__popup:target {
   opacity: 1;
