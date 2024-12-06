@@ -476,8 +476,8 @@ a:hover {
 }
 
 .popup__text {
-  max-width: 500px;
-  padding: 2% 5%;
+  max-width: 400px;
+  padding: 5% 5%;
   margin: 0 auto;
   text-align: left;
   vertical-align: top;
@@ -532,7 +532,7 @@ a:hover {
 
 .popup__text .desc__model {
   font-size: 15px;
-  min-width: 500px;
+  min-width: 380px;
 }
 
 .popup__close {
@@ -729,11 +729,11 @@ a:hover {
   border: 1px solid rgb(232, 196, 135);
   border-radius: 15px;
   width: 25%;
-  min-width: 400px;
+  min-width: 380px;
   max-width: 600px;
   margin: 2% 1%;
   padding: 1%;
-  height: 30vh;
+  height: 40vh;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -772,7 +772,7 @@ a:hover {
   text-decoration: none;
   padding-bottom: 10%;
   padding: 5%;
-  margin: 5% auto;
+  margin: 10% auto;
 }
 .contacts__popup__eng__link {
   background-color: rgba(0, 0, 0, 0.9);

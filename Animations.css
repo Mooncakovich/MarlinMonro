@@ -1,61 +1,56 @@
 @keyframes showLeft {
-
-    from {
-        translate: -15vw;
-        opacity: 0;
-    }
+  from {
+    translate: -5vw;
+    opacity: 0;
+  }
 }
 
 @keyframes showRight {
-
-    from {
-        translate: 15vw;
-        opacity: 0;
-    }
-
+  from {
+    translate: 5vw;
+    opacity: 0;
+  }
 }
 
 @keyframes showBottom {
-
-    from {
-        translate: -15vh;
-        opacity: 0;
-    }
-
+  from {
+    translate: -5vh;
+    opacity: 0;
+  }
 }
 
 .bottom {
-    opacity: 0;
-    -ms-transform: translateY(60px);
-    transform: translateY(60px);
-    -webkit-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+  opacity: 0;
+  -ms-transform: translateY(60px);
+  transform: translateY(60px);
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 .left {
-    opacity: 0;
+  opacity: 0;
 }
 
 .right {
-    opacity: 0;
+  opacity: 0;
 }
 
 .bottom.act {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .left.act {
-    position: relative;
-    animation: showLeft 1s;
-    opacity: 1;
+  position: relative;
+  animation: showLeft 1s;
+  opacity: 1;
 }
 
 .right.act {
-    position: relative;
-    animation: showRight 1s;
-    opacity: 1;
+  position: relative;
+  animation: showRight 1s;
+  opacity: 1;
 }
