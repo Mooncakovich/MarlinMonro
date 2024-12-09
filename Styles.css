@@ -65,7 +65,8 @@ a:hover {
 }
 
 .wellcome__overlay {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+    url("Images/main_background.jpg");
   position: absolute;
   top: 0;
   left: 0;
@@ -73,6 +74,13 @@ a:hover {
   height: 100%;
   z-index: 2;
   padding: 2%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  overflow: hidden;
+  background-position: 50% 50%;
 }
 
 .wellcome a {
@@ -590,6 +598,12 @@ a:hover {
 .gold {
   fill: white;
 }
+.bi-whatsapp {
+  fill: green;
+}
+.bi-telegram {
+  fill: rgb(0, 187, 255);
+}
 .gold:hover {
   fill: rgb(232, 196, 135);
 }
@@ -604,6 +618,12 @@ a:hover {
 }
 .green:hover {
   fill: rgb(232, 196, 135);
+}
+.social img {
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
 }
 .social a {
   text-align: center;
