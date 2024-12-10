@@ -884,3 +884,19 @@ a:hover {
   text-align: center;
   padding: 1%;
 }
+.footer__wp a {
+  color: green;
+  text-decoration: none;
+}
+.footer__wp a:hover {
+  color: green;
+  text-decoration: underline;
+}
+.footer__tg a {
+  color: rgb(0, 187, 255);
+  text-decoration: none;
+}
+.footer__tg a:hover {
+  color: rgb(0, 187, 255);
+  text-decoration: underline;
+}
