@@ -400,7 +400,7 @@ a:hover {
   border-radius: 0;
   border: 1px solid rgb(232, 196, 135);
   color: white;
-  width: 35%;
+  max-width: 55%;
   border-radius: 5px;
   display: inline-block;
   margin: 0 2%;
@@ -581,7 +581,7 @@ a:hover {
 }
 
 .navigation {
-  position: fixed;
+  position: absolute;
   z-index: 10;
   display: flex;
   right: 2%;
